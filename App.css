@@ -1,0 +1,113 @@
+:root {
+  --window-height: 100vh;
+}
+
+.App {
+  display: flex;
+  min-height: var(--window-height);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.combate-container {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  width: 100%; /* Ocupa todo el ancho de la página */ 
+  padding: 10px; /* Espaciado interior */
+}
+
+.imagen-container {
+  flex: 1; /* Ocupará el espacio restante */
+  display: flex;
+  justify-content: flex-start; /* Alinear imágenes a la izquierda */
+}
+
+.botones-container {
+  display: flex;
+  flex-direction: column; /* Los botones estarán en una columna */
+  justify-content: center; /* Centrar los botones verticalmente */
+  margin-left: 20px; /* Espacio a la izquierda de los botones */
+}
+
+.enemigos-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los enemigos */
+  margin-bottom: 10px;
+}
+
+.bodyMenu {
+  background-image: url(fondo\ menu.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+
+}  
+
+.bodyCombate {
+  background-image: url(fondo\ pelea.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.imagen-prota{
+  height: -auto;
+}
+
+.mensaje-victoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+  color: #FFD700; /* Dorado */
+  text-align: center;
+}
+
+.Lore {
+  color: black;
+}
+
+@font-face {
+  font-family: 'ThaleahFat';
+  src: url('./ThaleahFat.ttf') format('truetype'); /* Ruta relativa desde el archivo CSS */
+}
+
+body {
+  font-family: 'ThaleahFat', sans-serif; /* Aplica la fuente a todo el cuerpo */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina relleno predeterminado */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-size: 3rem; /* Tamaño de fuente para el encabezado */
+  color: black; /* Color del texto */
+}
+
+p {
+  font-size: 1.5rem; /* Tamaño de fuente para el párrafo */
+  color: black; /* Color del texto */
+}
+
+
+
